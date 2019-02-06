@@ -15,10 +15,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
 Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.main');
 	})->name('admin.home');
+<<<<<<< HEAD
+=======
+=======
+Route::group(['middleware'=>['auth']], function(){
+	Route::prefix('admin')->group(function(){
+		Route::get('/', function(){
+			return view('admin.pages.dashboard');
+		})->name('admin.home');
+	});
+
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 });
 
 Auth::routes();

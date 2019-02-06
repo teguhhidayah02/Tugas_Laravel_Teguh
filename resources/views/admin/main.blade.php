@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +17,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>SB Admin - Blank Page</title>
 
+=======
+<<<<<<< HEAD
+    <title>SB Admin - Blank Page</title>
+
+=======
+    <title>@yield('title') Tokap Admin</title>
+    <link rel="icon" type="image/png" href="{{url('favicon.png')}}">
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
     <!-- Bootstrap core CSS-->
     <link href="{{url('theme-sbadmin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
     <link href="{{url('theme-sbadmin/vendor/fontawesome-free/css/all.min.css"')}} rel="stylesheet" type="text/css">
 
 
     <!-- Custom styles for this template-->
     <link href="{{url('theme-sbadmin/css/sb-admin.css"')}} rel="stylesheet">
 
+<<<<<<< HEAD
+=======
+=======
+    <link href="{{url('theme-sbadmin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="{{url('theme-sbadmin/css/sb-admin.css')}}" rel="stylesheet">
+    @stack('css')
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
   </head>
 
   <body id="page-top">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
       <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
@@ -86,10 +120,20 @@
       </ul>
 
     </nav>
+<<<<<<< HEAD
+=======
+=======
+  @include('admin.navbar')
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 
     <div id="wrapper">
 
       <!-- Sidebar -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">
@@ -124,11 +168,21 @@
             <span>Tables</span></a>
         </li>
       </ul>
+<<<<<<< HEAD
+=======
+=======
+    @include('admin.sidebar')
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -141,11 +195,22 @@
           <h1>Blank Page</h1>
           <hr>
           <p>This is a great starting point for new custom pages.</p>
+<<<<<<< HEAD
+=======
+=======
+          <!-- Page Content -->
+          @yield('content')
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 
         </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
@@ -153,6 +218,13 @@
             </div>
           </div>
         </footer>
+<<<<<<< HEAD
+=======
+=======
+
+        @include('admin.footer')
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
 
       </div>
       <!-- /.content-wrapper -->
@@ -165,6 +237,10 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> EPISODE 3 dan 4
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -186,6 +262,16 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{url('theme-sbadmin/'vendor/jquery/jquery.min.js)}}"></script>
+<<<<<<< HEAD
+=======
+=======
+    <!-- Modal-->
+   @stack('modal')
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{url('theme-sbadmin/vendor/jquery/jquery.min.js')}}"></script>
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
     <script src="{{url('theme-sbadmin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
@@ -193,7 +279,22 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{url('theme-sbadmin/js/sb-admin.min.js')}}"></script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
   </body>
 
 </html>
+=======
+    <script type="text/javascript" src="{{url('theme-sbadmin/js/navbar-nav.js')}}"></script>
+    @stack('js')
+>>>>>>> EPISODE 3 dan 4
+
+  </body>
+
+</html>
+<<<<<<< HEAD
+=======
+>>>>>>> Episode 3 & 4
+>>>>>>> EPISODE 3 dan 4
