@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+>>>>>>> Episode 3 dan 4
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +21,7 @@
     <meta name="author" content="">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>SB Admin - Blank Page</title>
 
 =======
@@ -29,10 +33,15 @@
     <link rel="icon" type="image/png" href="{{url('favicon.png')}}">
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+    <title>@yield('title') Tokap Admin</title>
+    <link rel="icon" type="image/png" href="{{url('favicon.png')}}">
+>>>>>>> Episode 3 dan 4
     <!-- Bootstrap core CSS-->
     <link href="{{url('theme-sbadmin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -46,16 +55,22 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> Episode 3 dan 4
     <link href="{{url('theme-sbadmin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
     <link href="{{url('theme-sbadmin/css/sb-admin.css')}}" rel="stylesheet">
     @stack('css')
+<<<<<<< HEAD
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+>>>>>>> Episode 3 dan 4
   </head>
 
   <body id="page-top">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -126,10 +141,14 @@
   @include('admin.navbar')
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+  @include('admin.navbar')
+>>>>>>> Episode 3 dan 4
 
     <div id="wrapper">
 
       <!-- Sidebar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -174,11 +193,15 @@
     @include('admin.sidebar')
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+    @include('admin.sidebar')
+>>>>>>> Episode 3 dan 4
 
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -202,11 +225,16 @@
           @yield('content')
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+          <!-- Page Content -->
+          @yield('content')
+>>>>>>> Episode 3 dan 4
 
         </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -225,6 +253,10 @@
         @include('admin.footer')
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+
+        @include('admin.footer')
+>>>>>>> Episode 3 dan 4
 
       </div>
       <!-- /.content-wrapper -->
@@ -237,6 +269,7 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -265,13 +298,18 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> Episode 3 dan 4
     <!-- Modal-->
    @stack('modal')
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{url('theme-sbadmin/vendor/jquery/jquery.min.js')}}"></script>
+<<<<<<< HEAD
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+>>>>>>> Episode 3 dan 4
     <script src="{{url('theme-sbadmin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
@@ -279,6 +317,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{url('theme-sbadmin/js/sb-admin.min.js')}}"></script>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -298,3 +337,11 @@
 =======
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+    <script type="text/javascript" src="{{url('theme-sbadmin/js/navbar-nav.js')}}"></script>
+    @stack('js')
+
+  </body>
+
+</html>
+>>>>>>> Episode 3 dan 4

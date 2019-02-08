@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> EPISODE 3 dan 4
@@ -26,6 +27,8 @@ Route::prefix('admin')->group(function(){
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> Episode 3 dan 4
 Route::group(['middleware'=>['auth']], function(){
 	Route::prefix('admin')->group(function(){
 		Route::get('/', function(){
@@ -33,8 +36,11 @@ Route::group(['middleware'=>['auth']], function(){
 		})->name('admin.home');
 	});
 
+<<<<<<< HEAD
 >>>>>>> Episode 3 & 4
 >>>>>>> EPISODE 3 dan 4
+=======
+>>>>>>> Episode 3 dan 4
 });
 
 Auth::routes();
