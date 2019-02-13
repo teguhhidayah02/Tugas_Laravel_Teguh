@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> EPISODE 3 dan 4
@@ -41,8 +42,24 @@ Route::group(['middleware'=>['auth']], function(){
 >>>>>>> EPISODE 3 dan 4
 =======
 >>>>>>> Episode 3 dan 4
+=======
+Route::group(['middleware'=>['auth']], function(){
+	Route::prefix('admin')->group(function(){
+	Route::get('/',function(){
+		return view('admin.pages.dashboard');
+	})->name('admin.home');
+
+	Route::prefix('user')->group(function(){
+		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
+		Route::post('/setting','UserSettingController@update');
+	   });
+    });
+>>>>>>> eps.7
 });
 
 Auth::routes();
 
+<<<<<<< HEAD
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+>>>>>>> eps.7

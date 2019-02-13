@@ -36,8 +36,15 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+<<<<<<< HEAD
     protected function redirectTo()
     {
        return route('admin.home');
+=======
+
+    protected function redirectTo()
+    {
+        return route('admin.home');
+>>>>>>> eps.7
     }
 }

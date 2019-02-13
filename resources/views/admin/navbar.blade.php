@@ -9,7 +9,11 @@
       </button>
 
       <!-- Navbar Search -->
+<<<<<<< HEAD
      <div class="ml-auto"></div>
+=======
+      <div class="ml-auto"></div>
+>>>>>>> eps.7
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
@@ -21,7 +25,11 @@
             {{Auth::user()->name}}
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+<<<<<<< HEAD
             <a class="dropdown-item" href="#">Settings</a>
+=======
+            <a class="dropdown-item" href="{{ route('admin.user.setting')}}">Settings</a>
+>>>>>>> eps.7
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
@@ -30,8 +38,13 @@
 
     </nav>
 
+<<<<<<< HEAD
  @push('modal')
      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+=======
+@push('modal')
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+>>>>>>> eps.7
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -48,12 +61,20 @@
                document.getElementById('logout-form').submit();">Logout</a>
 
                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+<<<<<<< HEAD
                   {{ csrf_field() }}
+=======
+               {{ csrf_field() }}
+>>>>>>> eps.7
               </form>
           </div>
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 
     @endpush
 
+=======
+@endpush
+>>>>>>> eps.7
