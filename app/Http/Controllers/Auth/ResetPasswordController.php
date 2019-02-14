@@ -39,12 +39,5 @@ class ResetPasswordController extends Controller
 
      protected function redirectTo()
     {
-<<<<<<< HEAD
-       return route('admin.home');
-    }
 
-=======
-        return route('admin.home');
-    }
->>>>>>> eps.7
 }
