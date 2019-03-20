@@ -17,10 +17,17 @@ class AksesAdmin
     public function handle($request, Closure $next)
     {
         if(Auth::user()->akses == 'admin'){
+<<<<<<< HEAD
             return $next($request);
         }
 
         return abort(404);
         
+=======
+        return $next($request);
+        }
+
+        return abort(404);
+>>>>>>> Eps.19
     }
 }

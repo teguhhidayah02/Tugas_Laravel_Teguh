@@ -9,7 +9,11 @@
       </button>
 
       <!-- Navbar Search -->
+<<<<<<< HEAD
      <div class="ml-auto"></div>
+=======
+      <div class="ml-auto"></div>
+>>>>>>> Eps.19
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
@@ -20,7 +24,11 @@
             {{Auth::user()->name}}
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+<<<<<<< HEAD
             <a class="dropdown-item" href="{{ route('admin.user.setting')}}">Settings</a>
+=======
+            <a class="dropdown-item" href="{{ route('admin.user.setting') }}">Settings</a>
+>>>>>>> Eps.19
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
@@ -43,14 +51,25 @@
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="{{ route('logout') }}"
+<<<<<<< HEAD
                onclick="event.preventDefault();
                document.getElementById('logout-form').submit();">Logout</a>
 
                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+=======
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit()">Logout</a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+>>>>>>> Eps.19
                   {{ csrf_field() }}
               </form>
           </div>
         </div>
       </div>
     </div>
+<<<<<<< HEAD
      @endpush
+=======
+@endpush
+>>>>>>> Eps.19

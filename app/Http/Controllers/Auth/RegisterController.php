@@ -60,13 +60,29 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+<<<<<<< HEAD
     public function create(array $data)
      {
+=======
+    protected function create(array $data)
+    {
+>>>>>>> Eps.19
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+<<<<<<< HEAD
         ]); 
      }
 
  }
+=======
+        ]);
+    }
+
+    protected function redirectTo()
+    {
+        return route('admin.home');
+    }
+}
+>>>>>>> Eps.19

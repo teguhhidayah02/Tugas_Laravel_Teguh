@@ -8,6 +8,7 @@ use Auth;
 
 class UserController extends Controller
 {
+<<<<<<< HEAD
     public function daftar ( Request $req)
     {
     	$data = User::where('name' , 'like' , "%{$req->keyword}%")->paginate(10);
@@ -15,6 +16,15 @@ class UserController extends Controller
     }
 
      public function add()
+=======
+    public function daftar(Request $req)
+    {
+    	$data = User::where('name','like',"%{$req->keyword}%")->paginate(10);
+    	return view('admin.pages.user.daftar',['data'=>$data]);
+    }
+
+    public function add()
+>>>>>>> Eps.19
     {
     	return view('admin.pages.user.add');
     }
@@ -22,6 +32,7 @@ class UserController extends Controller
     public function save(Request $req)
     {
         \Validator::make($req->all(),[
+<<<<<<< HEAD
             'name'=>'required|between:3,100',
             'email'=>'required|unique:users,email',
             'password'=>'required|min:6',
@@ -30,6 +41,15 @@ class UserController extends Controller
         ])->validate();
 
         
+=======
+                'name'=>'required|between:3,100',
+                'email'=>'required|unique:users,email',
+                'password'=>'required|min:6',
+                'repassword'=>'required|same:password',
+                'akses'=>'required',
+        ])->validate();
+
+>>>>>>> Eps.19
     	$result = new User;
         $result->name = $req->name;
         $result->email = $req->email;
@@ -40,18 +60,28 @@ class UserController extends Controller
             return redirect()->route('admin.user')->with('result','success');
         } else {
             return back()->with('result','fail')->withInput();
+<<<<<<< HEAD
 
+=======
+>>>>>>> Eps.19
         }
     }
 
     public function edit($id)
     {
+<<<<<<< HEAD
         $data = User::where('id', $id)->first();
         return view('admin.pages.user.edit',['rc'=>$data]);
+=======
+        $data = User::where('id',$id)->first();
+        return view('admin.pages.user.edit',['rc'=>$data]);
+
+>>>>>>> Eps.19
     }
 
     public function update(Request $req)
     {
+<<<<<<< HEAD
         \Validator::make($req->all(),[
             'name'=>'required|between:3,100',
             'email'=>'required|unique:users,email,'.$req->id,
@@ -59,6 +89,16 @@ class UserController extends Controller
             'repassword'=>'same:password',
             'akses'=>'required',
         ])->validate();
+=======
+
+        \Validator::make($req->all(),[
+                'name'=>'required|between:3,100',
+                'email'=>'required|unique:users,email,'.$req->id,
+                'password'=>'nullable|min:6',
+                'repassword'=>'same:password',
+                'akses'=>'required',
+            ])->validate();
+>>>>>>> Eps.19
 
         if(!empty($req->password)){
             $field = [
@@ -83,4 +123,20 @@ class UserController extends Controller
             return back()->with('result','fail');
         }
     }
+<<<<<<< HEAD
 }
+=======
+
+        public function delete(Request $req)
+        {
+           $result = User::find($req->id);
+
+           if ( $result->delete() ) {
+                return back()->with('result','delete');
+           } else {
+                return back()->with('result','fail-delete');
+        }
+    }
+}
+
+>>>>>>> Eps.19

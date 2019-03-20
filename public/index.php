@@ -18,6 +18,10 @@
 | loading any of our classes later on. It feels great to relax.
 |
 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> Eps.19
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*

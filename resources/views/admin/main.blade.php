@@ -14,12 +14,17 @@
 
     <!-- Bootstrap core CSS-->
     <link href="{{url('theme-sbadmin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+<<<<<<< HEAD
     <!-- Custom fonts for this template-->
 
     <link href="{{url('theme-sbadmin/vendor/fontawesome-free/css/all.min.css"')}} rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template-->
     
+=======
+
+    <!-- Custom fonts for this template-->
+>>>>>>> Eps.19
     <link href="{{url('theme-sbadmin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template-->
@@ -42,12 +47,21 @@
 
           <!-- Page Content -->
           @yield('content')
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> Eps.19
         </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
+<<<<<<< HEAD
         @include('admin.footer')
+=======
+          @include('admin.footer')
+
+>>>>>>> Eps.19
       </div>
       <!-- /.content-wrapper -->
 
@@ -76,6 +90,9 @@
   </body>
 
 </html>
+<<<<<<< HEAD
 
   
 
+=======
+>>>>>>> Eps.19
